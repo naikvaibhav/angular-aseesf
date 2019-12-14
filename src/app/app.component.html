@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+
+<div class="parent">
+  <h1>This is a parent component </h1>
+<p>{{msg}}</p>
+<button (click)="newParent()">Click here to send message to parent</button> <button (click)="closenewParent()">Close message</button>
+<app-child [msg]="message"  (notify)="parentFunction($event)"> 
+</app-child>
+
+</div>
